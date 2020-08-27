@@ -29,17 +29,21 @@ public class Duke {
         String command;
         Task[] list = new Task[100];
         int itemCount = 0;
-
+	String horizLine = "____________________________________________________________";
 
         Scanner in = new Scanner(System.in);
-
-        System.out.println("Hello! I'm Duke\n" + "What can I do for you?\n");
+	
+	System.out.println(horizLine);
+        System.out.println("Hello! I'm Duke\n" + "What can I do for you?");
+	System.out.println(horizLine + "\n");
         command = in.nextLine();
 
         while  (!command.equals("bye")) {
 
             if (!command.equals("list") && !command.contains("done")) {
-                System.out.println("added: " + command + "\n");
+		System.out.println(horizLine);
+                System.out.println("added: " + command);
+		System.out.println(horizLine + "\n");
                 Task item = new Task(command);
                 list[itemCount] = item;
                 itemCount++;
@@ -48,22 +52,27 @@ public class Duke {
             else if (command.contains("done")) {
                 int taskNum = Integer.parseInt(command.substring(5));
                 list[taskNum-1].setDone();
+		System.out.println(horizLine);
                 System.out.println("Nice! I've marked this task as done:\n" + "[\u2713] " + list[taskNum-1].getDescription());
+		System.out.println(horizLine + "\n");
                 System.out.println("\n");
             }
 
             else {
-                System.out.println("\n");
+		System.out.println(horizLine);
+                System.out.println("Here are the tasks in your list:\n");
                 for (int i = 0; i < itemCount; i++) {
                     System.out.println((i+1) + ".[" + list[i].getStatusIcon() + "] " + list[i].getDescription());
                 }
-                System.out.println("\n");
+		System.out.println(horizLine + "\n");
             }
             command = in.nextLine();
         }
 
         if (command.equals("bye")) {
+	    System.out.println(horizLine);	
             System.out.println("Bye. Hope to see you again soon!");
+	    System.out.println(horizLine + "\n");
         }
     }
 }
