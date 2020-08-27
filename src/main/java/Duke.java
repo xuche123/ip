@@ -1,13 +1,35 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
+class Task {
+    protected String description;
+    protected boolean isDone;
+
+    public Task(String description) {
+        this.description = description;
+        this.isDone = false;
+    }
+
+    public String getStatusIcon() {
+        return (isDone ? "\u2713" : "\u2718"); //return tick or X symbols
+    }
+
+    public String getDescription() {
+        return this.description;
+    }
+
+    public void setDone() {
+        this.isDone = true;
+    }
+}
+
 public class Duke {
 
     public static void main(String[] args) {
         String command;
-        String[] list = new String[100];
+        Task[] list = new Task[100];
         int itemCount = 0;
-        int listNum = 1;
+
 
         Scanner in = new Scanner(System.in);
 
@@ -16,18 +38,26 @@ public class Duke {
 
         while  (!command.equals("bye")) {
 
-            if (!command.equals("list")) {
+            if (!command.equals("list") && !command.contains("done")) {
                 System.out.println("added: " + command + "\n");
-                list[itemCount] = command;
+                Task item = new Task(command);
+                list[itemCount] = item;
                 itemCount++;
             }
+
+            else if (command.contains("done")) {
+                int taskNum = Integer.parseInt(command.substring(5));
+                list[taskNum-1].setDone();
+                System.out.println("Nice! I've marked this task as done:\n" + "[\u2713] " + list[taskNum-1].getDescription());
+                System.out.println("\n");
+            }
+
             else {
-                String[] printedList = Arrays.copyOf(list, itemCount);
-                for (int i = 0; i < printedList.length; i++) {
-                    System.out.println((listNum++) + ". " + printedList[i]);
+                System.out.println("\n");
+                for (int i = 0; i < itemCount; i++) {
+                    System.out.println((i+1) + ".[" + list[i].getStatusIcon() + "] " + list[i].getDescription());
                 }
                 System.out.println("\n");
-                listNum = 1;
             }
             command = in.nextLine();
         }
