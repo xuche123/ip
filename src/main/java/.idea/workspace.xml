@@ -42,6 +42,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -51,7 +52,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597569623199</updated>
-      <workItem from="1597569626863" duration="383000" />
+      <workItem from="1597569626863" duration="669000" />
+      <workItem from="1597997435387" duration="427000" />
     </task>
     <servers />
   </component>
@@ -68,5 +70,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="923" y="650" key="SettingsEditor" timestamp="1597997525874">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="923" y="650" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1597997525874" />
   </component>
 </project>
