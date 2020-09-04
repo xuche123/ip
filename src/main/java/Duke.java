@@ -23,31 +23,19 @@ public class Duke {
         while (!command.equals("bye")) {
             if (command.contains("todo")) {
                 taskCount = computeTodoCommand(tasks, horizLine, command, taskCount);
-            }
-
-            else if (command.contains("deadline")) {
+            } else if (command.contains("deadline")) {
                 taskCount = computeDeadlineCommand(tasks, horizLine, command, taskCount);
-            }
-
-            else if (command.contains("event")){
+            } else if (command.contains("event")){
                 taskCount = computeEventCommand(tasks, horizLine, command, taskCount);
-            }
-
-            else if (command.equals("list")) {
+            } else if (command.equals("list")) {
                 printList(tasks, horizLine, taskCount);
-            }
-
-            else if (command.contains("done")) {
+            } else if (command.contains("done")) {
                 markAsDone(tasks, horizLine, command);
-            }
-
-            else {
+            } else {
                 taskCount = computeBasicCommand(tasks, horizLine, command, taskCount);
             }
-
             command = in.nextLine();
         }
-
         showFarewellMessage(horizLine);
     }
 
