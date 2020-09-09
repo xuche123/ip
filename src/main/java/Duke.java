@@ -1,3 +1,8 @@
+import tasks.Deadline;
+import tasks.Event;
+import tasks.Task;
+import tasks.Todo;
+
 import java.util.Scanner;
 
 public class Duke {
@@ -53,10 +58,6 @@ public class Duke {
                 System.out.println("Nice! I've marked this task as done:\n" + "[\u2713] " + tasks[taskNum - 1].getDescription());
                 System.out.println(horizLine);
             } catch (ArrayIndexOutOfBoundsException e) {
-                System.out.println(horizLine);
-                System.out.println("Number given is not in the list.");
-                System.out.println(horizLine);
-            } catch (NullPointerException f) {
                 System.out.println(horizLine);
                 System.out.println("Number given is not in the list.");
                 System.out.println(horizLine);
