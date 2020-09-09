@@ -61,10 +61,6 @@ public class Duke {
                 System.out.println(horizLine);
                 System.out.println("Number given is not in the list.");
                 System.out.println(horizLine);
-            } catch (NullPointerException f) {
-                System.out.println(horizLine);
-                System.out.println("Number given is not in the list.");
-                System.out.println(horizLine);
             }
         }
     }
