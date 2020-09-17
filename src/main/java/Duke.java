@@ -6,8 +6,10 @@ import tasks.Todo;
 import java.util.Scanner;
 
 public class Duke {
+    private static final int MAX_NUM = 100;
+
     public static void main(String[] args) {
-        Task[] tasks = new Task[100];
+        Task[] tasks = new Task[MAX_NUM];
         String horizLine = "____________________________________________________________";
         showWelcomeMessage(horizLine);
         executeUserCommand(tasks, horizLine);
@@ -150,7 +152,7 @@ public class Duke {
 
     private static void showWelcomeMessage(String horizLine) {
         System.out.println(horizLine);
-        System.out.println("Hello! I'm Duke\n" + "What can I do for you?");
+        System.out.println("Hello! I'm Duke.\n" + "What can I do for you?");
         System.out.println(horizLine);
     }
 
