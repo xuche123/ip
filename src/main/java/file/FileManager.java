@@ -2,6 +2,7 @@ package file;
 
 import duke.Duke;
 import duke.tasks.*;
+
 import java.util.ArrayList;
 import java.io.File;
 import java.io.IOException;
@@ -18,6 +19,7 @@ public class FileManager {
             System.out.println("File does not exist. New file duke.txt created.");
         } else {
             System.out.println("File found and loaded.");
+            System.out.println(Duke.horizLine);
         }
 
         Scanner scanner = new Scanner(dukeTxt);
@@ -50,5 +52,13 @@ public class FileManager {
                 tasks.get(tasks.size() - 1).setDone();
             }
         }
+    }
+
+    public static void writeToFile(ArrayList<Task> tasks) throws IOException {
+        FileWriter fw = new FileWriter(fileName);
+        for (Task task:tasks) {
+            fw.write(task.convertToFileString() + "\n");
+        }
+        fw.close();
     }
 }

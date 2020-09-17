@@ -4,20 +4,24 @@ import duke.tasks.Deadline;
 import duke.tasks.Event;
 import duke.tasks.Task;
 import duke.tasks.Todo;
+import file.FileManager;
+
+import java.io.IOException;
 import java.util.ArrayList;
 
 import java.util.Scanner;
 
 public class Duke {
-    private static final String horizLine = "____________________________________________________________";
+    public static final String horizLine = "____________________________________________________________";
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         ArrayList<Task> tasks = new ArrayList<>();
         showWelcomeMessage();
+        FileManager.loadFile(tasks);
         executeUserCommand(tasks);
     }
 
-    private static void executeUserCommand(ArrayList<Task> tasks) {
+    private static void executeUserCommand(ArrayList<Task> tasks) throws IOException {
         String command;
         Scanner in = new Scanner(System.in);
         command = in.nextLine();
@@ -38,6 +42,7 @@ public class Duke {
             } else {
                 printErrorMessage("Invalid command given. Please enter a new command.");
             }
+            FileManager.writeToFile(tasks);
             command = in.nextLine();
         }
         showFarewellMessage();
