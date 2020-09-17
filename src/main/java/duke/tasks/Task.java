@@ -1,4 +1,4 @@
-package tasks;
+package duke.tasks;
 
 public class Task {
     protected String description;
@@ -17,11 +17,18 @@ public class Task {
         return this.description;
     }
 
+    public String getStatus() {
+        return (isDone ? "1" : "0");
+    }
     public void setDone() {
         this.isDone = true;
     }
 
     public String toString() {
         return "[" + getStatusIcon() + "] " + description;
+    }
+
+    public String convertToFileString() {
+        return " | " + getStatus() + " | " + description;
     }
 }

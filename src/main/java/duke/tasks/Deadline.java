@@ -1,4 +1,4 @@
-package tasks;
+package duke.tasks;
 
 public class Deadline extends Task {
 
@@ -12,5 +12,10 @@ public class Deadline extends Task {
     @Override
     public String toString() {
         return "[D]" + super.toString() + " (by: " + by + ")";
+    }
+
+    @Override
+    public String convertToFileString() {
+        return "D" + super.convertToFileString() + " | " + by;
     }
 }
