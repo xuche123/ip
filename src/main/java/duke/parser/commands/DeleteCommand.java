@@ -19,14 +19,11 @@ public class DeleteCommand implements DukeCommands{
             try {
                 String toDelete = tasks.get(indexToDelete).toString();
                 tasks.remove(indexToDelete);
-                System.out.println("Noted. I've removed this task");
-                System.out.println(toDelete);
+                DukeUI.printMessageWithBorders("Noted. I've removed this task" + "\n" + toDelete);
             } catch (ArrayIndexOutOfBoundsException e) {
                 DukeUI.printMessageWithBorders("Number given is not in the list.");
             } catch (IndexOutOfBoundsException e) {
                 DukeUI.printMessageWithBorders("Please provide a valid number.");
-            } finally {
-                DukeUI.printHorizLine();
             }
         }
     }
