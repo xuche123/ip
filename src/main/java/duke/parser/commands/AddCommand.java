@@ -52,7 +52,6 @@ public class AddCommand implements DukeCommands{
             String description = command.substring(fiveChar);
             DukeUI.printAcknowledgement();
             tasks.add(new Todo(description));
-
         } catch (StringIndexOutOfBoundsException e) {
             DukeUI.printMessageWithBorders("Description for a Todo cannot be left empty.");
         } finally {
