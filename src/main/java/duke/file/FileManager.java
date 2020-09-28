@@ -1,7 +1,7 @@
-package file;
+package duke.file;
 
-import duke.Duke;
 import duke.tasks.*;
+import duke.ui.DukeUI;
 
 import java.util.ArrayList;
 import java.io.File;
@@ -19,9 +19,8 @@ public class FileManager {
             System.out.println("File does not exist. New file duke.txt created.");
         } else {
             System.out.println("File found and loaded.");
-            System.out.println(Duke.horizLine);
         }
-
+        System.out.println(DukeUI.horizLine);
         Scanner scanner = new Scanner(dukeTxt);
         while (scanner.hasNext()) {
             String taskData = scanner.nextLine();
