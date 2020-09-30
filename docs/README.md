@@ -1,7 +1,7 @@
 # User Guide
 Duke is a task manager that runs on the Command Line Interface(CLI).
 
-* [Quick Start]()
+* [Quick Start](https://github.com/xuche123/ip/tree/master/docs#quick-start)
 * [Features](https://github.com/xuche123/ip/tree/master/docs#features) 
     * 1.[help](https://github.com/xuche123/ip/tree/master/docs#1help---listing-all-available-commands)
     * 2.[todo](https://github.com/xuche123/ip/tree/master/docs#2-todo-deadline-event---adding-a-task)
@@ -12,7 +12,7 @@ Duke is a task manager that runs on the Command Line Interface(CLI).
     * 7.[delete](https://github.com/xuche123/ip/tree/master/docs#6-find---finding-tasks)
     * 8.[find](https://github.com/xuche123/ip/tree/master/docs#6-find---finding-tasks)
     * 9.[bye](https://github.com/xuche123/ip/tree/master/docs#7-bye---exiting-the-program)
-* [Command Summary]()
+* [Command Summary](https://github.com/xuche123/ip/tree/master/docs#command-summary)
 
 ## Quick Start
 1. Ensure that you have Java 11 installed.
