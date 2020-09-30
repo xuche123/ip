@@ -38,6 +38,8 @@ public class DukeParser {
                 DeleteCommand.removeTask(tasks, command);
             } else if (formattedCommand.startsWith("find")) {
                 FindCommand.findKeyword(tasks, command);
+            } else if (formattedCommand.startsWith("help")) {
+                HelpCommand.showAvailableCommands();
             } else {
                 DukeUI.printMessageWithBorders("Invalid command given. Please enter a new command.");
             }
