@@ -2,16 +2,18 @@
 Duke is a task manager that runs on the Command Line Interface(CLI).
 
 * [Quick Start]()
-* [Features]() 
-    * 1.[help]()
-    * 2.[todo]()
-    * 3.[deadline]()
-    * 4.[event]()
-    * 5.[list]()
-    * 6.[done]()
-    * 7.[delete]()
-    * 8.[bye]()
+* [Features](https://github.com/xuche123/ip/tree/master/docs#features) 
+    * 1.[help](https://github.com/xuche123/ip/tree/master/docs#1help---listing-all-available-commands)
+    * 2.[todo](https://github.com/xuche123/ip/tree/master/docs#2-todo-deadline-event---adding-a-task)
+    * 3.[deadline](https://github.com/xuche123/ip/tree/master/docs#2-todo-deadline-event---adding-a-task)
+    * 4.[event](https://github.com/xuche123/ip/tree/master/docs#2-todo-deadline-event---adding-a-task)
+    * 5.[list](https://github.com/xuche123/ip/tree/master/docs#3-list---listing-all-tasks)
+    * 6.[done](https://github.com/xuche123/ip/tree/master/docs#4-done---marking-a-task-as-done)
+    * 7.[delete](https://github.com/xuche123/ip/tree/master/docs#6-find---finding-tasks)
+    * 8.[find](https://github.com/xuche123/ip/tree/master/docs#6-find---finding-tasks)
+    * 9.[bye](https://github.com/xuche123/ip/tree/master/docs#7-bye---exiting-the-program)
 * [Command Summary]()
+
 ##Quick Start
 1. Ensure that you have Java 11 installed.
 2. Download duke.jar and move it into a new folder.
@@ -90,6 +92,7 @@ Ends the program when command `bye` is given.
 
 Example of usage: 
 `bye` 
+
 
 
 ##Command Summary
