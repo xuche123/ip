@@ -8,7 +8,19 @@ import duke.ui.DukeUI;
 
 import java.util.ArrayList;
 
+/**
+ * Handles user commands of type <code>deadline</code>, <code>to do</code>
+ * and type <code>event</code>.
+ */
 public class AddCommand implements DukeCommands{
+    /**
+     * Handles user-inputted command of type Event. Shows an error message when description
+     * of command is left empty.
+     *
+     * @param tasks ArrayList of type Task.
+     * @param command User-inputted command
+     *
+     */
     public static void computeEventCommand(ArrayList<Task> tasks, String command) {
         String[] eventDetails = new String[2];
         try {
@@ -24,6 +36,14 @@ public class AddCommand implements DukeCommands{
         }
     }
 
+    /**
+     * Handles user-inputted command of type Deadline. Shows an error message when description
+     * of command is left empty.
+     *
+     * @param tasks ArrayList of type Task.
+     * @param command User-inputted command
+     *
+     */
     public static void computeDeadlineCommand(ArrayList<Task> tasks, String command) {
         String[] deadlineDetails = new String[2];
         try {
@@ -40,6 +60,15 @@ public class AddCommand implements DukeCommands{
         }
     }
 
+    /**
+     * Extract description and timings from user-inputted command of type Event or Deadline
+     *
+     * @param commandDetails Array storing the description in the index 0 and timing in index 1.
+     * @param command User-inputted command
+     * @param commandType Either deadline or event
+     *
+     * @throws StringIndexOutOfBoundsException if String command is NULL.
+     */
     private static void extractCommandDetails(String[] commandDetails, String command, String commandType)
             throws StringIndexOutOfBoundsException{
         int dividerPos = command.indexOf('/');
@@ -47,6 +76,13 @@ public class AddCommand implements DukeCommands{
         commandDetails[1] = command.substring(dividerPos + 4);
     }
 
+    /**
+     * Handles user-inputted command of type to do.
+     *
+     * @param tasks ArrayList of type Task.
+     * @param command User-inputted command
+     *
+     */
     public static void computeTodoCommand(ArrayList<Task> tasks, String command) {
         try {
             String description = command.substring(fiveChar);

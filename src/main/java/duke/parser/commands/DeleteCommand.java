@@ -4,8 +4,19 @@ import duke.tasks.Task;
 import duke.ui.DukeUI;
 
 import java.util.ArrayList;
+/**
+ * Handles user commands of type <code>delete</code>.
+ */
 
 public class DeleteCommand implements DukeCommands{
+    /**
+     * Handles user-inputted command of type Delete. Shows an error message when the task
+     * to delete does not exist.
+     *
+     * @param tasks ArrayList of type Task.
+     * @param command User-inputted command
+     *
+     */
     public static void removeTask(ArrayList<Task> tasks, String command) {
         int indexToDelete = -1;
         boolean proceedOnwards = false;

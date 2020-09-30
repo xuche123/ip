@@ -7,7 +7,6 @@ public class DukeUI {
         printMessageWithBorders("Got it. I've added this task: ");
     }
 
-
     public static void showFarewellMessage() {
         printMessageWithBorders("Bye. Hope to see you again soon!");
     }
