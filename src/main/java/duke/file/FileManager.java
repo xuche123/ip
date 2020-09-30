@@ -10,9 +10,19 @@ import java.io.FileWriter;
 
 import java.util.Scanner;
 
+/**
+ * Read and write commands into duke.txt
+ */
+
 public class FileManager {
     public static final String fileName = "duke.txt";
 
+    /**
+     * Searches and loads duke.txt if it exists. Otherwise, duke.txt is created.
+     * Reads data from duke.txt and stores it in the ArrayList tasks.
+     *
+     * @param tasks  ArrayList of type Task containing commands.
+     */
     public static void loadFile(ArrayList<Task> tasks) throws IOException {
         File dukeTxt = new File(fileName);
         if (dukeTxt.createNewFile()) {

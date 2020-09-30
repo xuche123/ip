@@ -5,7 +5,19 @@ import duke.ui.DukeUI;
 
 import java.util.ArrayList;
 
+/**
+ * Handles user commands of type <code>list</code> and type <code>done</code>.
+ */
+
 public class ListCommand implements DukeCommands {
+    /**
+     * Mark a specific task as done. If task entered does not exist an error message
+     * will be printed.
+     *
+     * @param tasks ArrayList of type Task.
+     * @param command User-input command in the form of 'done X' where X is an integer
+     *
+     */
     public static void markAsDone(ArrayList<Task> tasks, String command) {
         int taskNum = -1;
         boolean proceedOnwards = false;

@@ -10,6 +10,12 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class DukeParser {
+    /**
+     * Parses the user-input and calls the appropriate function corresponding to the
+     * command type. Stores all commands into a text file.
+     *
+     * @param tasks ArrayList of type Task storing all user-inputs
+     */
     public static void executeUserCommand(ArrayList<Task> tasks) throws IOException {
         String command;
         String formattedCommand;
@@ -31,8 +37,7 @@ public class DukeParser {
             } else if (formattedCommand.startsWith("delete")) {
                 DeleteCommand.removeTask(tasks, command);
             } else if (formattedCommand.startsWith("find")) {
-                FindCommand.findKeyword(
-                        tasks, command);
+                FindCommand.findKeyword(tasks, command);
             } else {
                 DukeUI.printMessageWithBorders("Invalid command given. Please enter a new command.");
             }

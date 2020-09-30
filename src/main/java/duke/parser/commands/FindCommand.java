@@ -4,7 +4,18 @@ import duke.tasks.Task;
 import duke.ui.DukeUI;
 
 import java.util.ArrayList;
+/**
+ * Handles user commands of type <code>find</code>.
+ */
 public class FindCommand implements DukeCommands{
+    /**
+     * Handles user-inputted command of type Find. Shows an error message when the
+     * command does not specify any keyword.
+     *
+     * @param tasks ArrayList of type Task.
+     * @param command User-inputted command
+     *
+     */
     public static void findKeyword(ArrayList<Task> tasks, String command) {
         String keyword = null;
         boolean proceedOnwards = false;
