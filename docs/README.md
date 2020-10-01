@@ -1,28 +1,30 @@
 # User Guide
 Duke is a task manager that runs on the Command Line Interface(CLI).
 
-* [Quick Start](https://github.com/xuche123/ip/tree/master/docs#quick-start)
-* [Features](https://github.com/xuche123/ip/tree/master/docs#features) 
-    * 1.[help](https://github.com/xuche123/ip/tree/master/docs#1help---listing-all-available-commands)
-    * 2.[todo](https://github.com/xuche123/ip/tree/master/docs#2-todo-deadline-event---adding-a-task)
-    * 3.[deadline](https://github.com/xuche123/ip/tree/master/docs#2-todo-deadline-event---adding-a-task)
-    * 4.[event](https://github.com/xuche123/ip/tree/master/docs#2-todo-deadline-event---adding-a-task)
-    * 5.[list](https://github.com/xuche123/ip/tree/master/docs#3-list---listing-all-tasks)
-    * 6.[done](https://github.com/xuche123/ip/tree/master/docs#4-done---marking-a-task-as-done)
-    * 7.[delete](https://github.com/xuche123/ip/tree/master/docs#6-find---finding-tasks)
-    * 8.[find](https://github.com/xuche123/ip/tree/master/docs#6-find---finding-tasks)
-    * 9.[bye](https://github.com/xuche123/ip/tree/master/docs#7-bye---exiting-the-program)
+* [Quick Start](#quick-start)
+* [Features](#features) 
+    * 1.[help](#1help---listing-all-available-commands)
+    * 2.[todo](#2-todo-deadline-event---adding-a-task)
+    * 3.[deadline](#2-todo-deadline-event---adding-a-task)
+    * 4.[event](#2-todo-deadline-event---adding-a-task)
+    * 5.[list](#3-list---listing-all-tasks)
+    * 6.[done](#4-done---marking-a-task-as-done)
+    * 7.[delete](#5-delete---deleting-tasks)
+    * 8.[find](#6-find---finding-tasks)
+    * 9.[bye](#7-bye---exiting-the-program)
 * [Command Summary](https://github.com/xuche123/ip/tree/master/docs#command-summary)
 
 ## Quick Start
 1. Ensure that you have Java 11 installed.
 2. Download duke.jar and move it into a new folder.
 3. Run command prompt and navigate to the new folder.
-4. Run duke.jar using the following command: 
-`java -jar duke.jar`
-5. Type
-`help` to view a list of available commands.
+4. Run duke.jar using the following command: `java -jar duke.jar`
+5. Type `help` to view a list of available commands.
+
+
+
 ## Features 
+
 ### 1.`help` - Listing all available commands
 Lists the available commands and usage
 
