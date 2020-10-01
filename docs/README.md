@@ -13,7 +13,7 @@ Duke is a task manager that runs on the Command Line Interface(CLI).
     * 7.[delete](#5-delete---deleting-tasks)
     * 8.[find](#6-find---finding-tasks)
     * 9.[bye](#7-bye---exiting-the-program)
-* [Command Summary](https://github.com/xuche123/ip/tree/master/docs#command-summary)
+* [Command Summary](#command-summary)
 
 ## Quick Start
 
