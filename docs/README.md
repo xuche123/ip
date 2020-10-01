@@ -1,4 +1,5 @@
 # User Guide
+
 Duke is a task manager that runs on the Command Line Interface(CLI).
 
 * [Quick Start](#quick-start)
@@ -15,6 +16,7 @@ Duke is a task manager that runs on the Command Line Interface(CLI).
 * [Command Summary](https://github.com/xuche123/ip/tree/master/docs#command-summary)
 
 ## Quick Start
+
 1. Ensure that you have Java 11 installed.
 2. Download duke.jar and move it into a new folder.
 3. Run command prompt and navigate to the new folder.
@@ -98,6 +100,7 @@ Example of usage:
 
 
 ## Command Summary
+
 Command|Format|Example
 -------|------|-------
 help|`help`|`help`
